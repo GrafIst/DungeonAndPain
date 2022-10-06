@@ -25,11 +25,11 @@ int main()
 
     Inventory inventoryMerchant(merchantWeaponStock);
 
-    Merchant merchantA("Jack", "Polter", "A travelling merchant", 100, defaultMoveset, 15, "Come here, i've got stuff to sell",&inventoryMerchant, 100, &ironSword, Elve, Villager, "Everything's cheap", merchantWeaponStock);
+    //Merchant merchantA("Jack", "Polter", "A travelling merchant", 100, defaultMoveset, 15, "Come here, i've got stuff to sell",&inventoryMerchant, 100, &ironSword, Elve, Villager, "Everything's cheap", merchantWeaponStock);
 
-    Merchant merchantB("Loic", "Reynard", "Another travelling merchant", 100, defaultMoveset, 15, "so much cheap stuff you wouldnt believe", inventoryMerchant, 2000, &ironSword, Human, Villager, "Goldie", merchantWeaponStock);
+    //Merchant merchantB("Loic", "Reynard", "Another travelling merchant", 100, defaultMoveset, 15, "so much cheap stuff you wouldnt believe", inventoryMerchant, 2000, &ironSword, Human, Villager, "Goldie", merchantWeaponStock);
 
-    merchantA.Introduce();
+    //merchantA.Introduce();
 
     //cout << merchantA.GetName() << endl;
     //cout << merchantA.GetCharacterLastName() << endl;

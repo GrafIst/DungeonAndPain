@@ -19,6 +19,19 @@ Inventory::Inventory(vector<Item*> _itemsInventory)
 	itemsInventory = _itemsInventory;
 }
 
+
+
+Weapon* Inventory::GetAllWeaponsFromInventory()
+{
+	vector<Item*> weaponsVector;
+	for (Item* _items : itemsInventory) {
+		if (_items->GetItemType() == EItemType::WeaponType) {
+			weaponsVector.push_back(_items);
+		}
+	}
+	return weaponsVector;
+}
+
 Item* Inventory::GetFirstWeapon()
 {
 	for (Item* _items : itemsInventory) {

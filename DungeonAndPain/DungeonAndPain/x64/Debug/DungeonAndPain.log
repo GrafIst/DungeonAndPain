@@ -1,47 +1,18 @@
-﻿  Attack.cpp
+﻿  Character.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Character.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(39,62): warning C4552: '+': result of expression not used
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(35,20): warning C4552: '+': result of expression not used
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(36,45): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(36,104): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(37,57): error C2065: 'characterWeapon': undeclared identifier
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(41,9): error C3861: 'SwitchWeapon': identifier not found
-  Creature.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(46,20): warning C4552: '+': result of expression not used
   DungeonAndPain.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(39,62): warning C4552: '+': result of expression not used
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(28,222): error C2661: 'Merchant::Merchant': no overloaded function takes 14 arguments
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(30,225): error C2661: 'Merchant::Merchant': no overloaded function takes 14 arguments
-  Inventory.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5): error C2259: 'Item': cannot instantiate abstract class
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(9): message : see declaration of 'Item'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5): message : due to following members:
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5): message : 'float Item::GetWeaponDurability(void)': is abstract
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(31): message : see declaration of 'Item::GetWeaponDurability'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5,35): error C2259: 'Item': cannot instantiate abstract class
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(9): message : see declaration of 'Item'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5,35): message : due to following members:
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(5,35): message : 'float Item::GetWeaponDurability(void)': is abstract
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(31): message : see declaration of 'Item::GetWeaponDurability'
-  Item.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.cpp(8,19): warning C4305: '=': truncation from 'double' to 'float'
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
   Merchant.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(39,62): warning C4552: '+': result of expression not used
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(18,12): error C2661: 'Character::Character': no overloaded function takes 12 arguments
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(110,41): error C2039: 'GetWeaponDurability': is not a member of 'Item'
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(9): message : see declaration of 'Item'
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(112,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Monster.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Monster.cpp(6,22): error C2259: 'Item': cannot instantiate abstract class
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(9): message : see declaration of 'Item'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Monster.cpp(6,22): message : due to following members:
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Monster.cpp(6,22): message : 'float Item::GetWeaponDurability(void)': is abstract
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(31): message : see declaration of 'Item::GetWeaponDurability'
   Weapon.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Weapon.cpp(26,26): warning C4305: '-=': truncation from 'double' to 'float'
   Generating Code...

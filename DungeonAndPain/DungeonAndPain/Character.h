@@ -29,6 +29,8 @@ public:
     Character(string _creatureName, string _characterLastName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory,
          int _characterMoney, ECharacterRace _characterRace, ECharacterJob _characterJob);
 
+    Character(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory, int _characterMoney, ECharacterRace _characterRace);
+
     //GET & SET
     string GetCharacterLastName() { return characterLastName; };
     int GetCharacterMoney() { return characterMoney; };

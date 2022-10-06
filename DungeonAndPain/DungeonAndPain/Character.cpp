@@ -29,19 +29,32 @@ Character::Character(string _creatureName, string _characterLastName, string _cr
     weaponAmount = 1;
 }
 
+Character::Character(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory, int _characterMoney, ECharacterRace _characterRace)
+{
+    characterLastName = _characterLastName;
+    characterMoney = _characterMoney;
+    characterRace = _characterRace;
+    weaponAmount = 1;
+}
+
+
+
+
 void Character::Loot(Character* _character)
 {
     cout << "He take the money of the defeated character" << endl;
     characterMoney + _character->GetCharacterMoney();
-    cout << "His weapon is " << _character->GetCreatureInventory()->GetFirstWeapon() << ". " << _character->GetCreatureInventory()->GetFirstWeapon()->GetItemDescription();
-    cout << "Will he switch it with his own weapon " << characterWeapon->GetItemName() << "or ignore it ? (y/n)" << endl;
+    Item* weaponLooted = _character->GetCreatureInventory()->GetFirstWeapon();
+    cout << "His weapon is " << weaponLooted->GetItemName() << ". " << _character->GetCreatureInventory()->GetFirstWeapon()->GetItemDescription();
+    cout << "Do you want to add the weapon to your inventory or ignore it ? (y/n)" << endl;
     char answer;
     cin >> answer;
     if (answer == 'y') {
-        SwitchWeapon(_character);
+        cout << "You've added his weapon to your inventory" << endl;
+        GetCreatureInventory()->AddItemToInventory(weaponLooted);
     }
     else {
-        cout << "He keeps his current weapon" << endl;
+        cout << "You ignore it" << endl;
     }
 }
 
@@ -56,7 +69,6 @@ void Character::Loot(Character* _character)
 //    characterWeapon = _weapon;
 //    cout << "He switches his own weapon with the new one" << endl;
 //}
-
 
 
 void Character::AddMoney(int _money)
@@ -77,13 +89,3 @@ void Character::AnnounceWeapon()
         }
     }
 }
-
-//void Character::Buy(Merchant& _merchant)
-//{
-//
-//}
-//
-//void Character::Sell(Merchant& _merchant)
-//{
-//
-//}

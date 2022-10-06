@@ -9,17 +9,17 @@ using namespace std;
 class Monster :
     protected Creature
 {
-    vector<Item> lootsDrop;
+    vector<Item*> lootsDrop;
 
 public:
     //CONSTRUCTOR & DESTRUCTOR
     Monster();
     ~Monster();
     Monster(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _attacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory,
-        vector<Item> _lootsDrop);
+        vector<Item*> _lootsDrop);
 
     //GET
-    vector<Item> GetLootsDrop() { return lootsDrop; };
+    vector<Item*> GetLootsDrop() { return lootsDrop; };
 
 
 };

@@ -13,10 +13,10 @@ Merchant::~Merchant()
 
 }
 
-Merchant::Merchant(string _creatureName, string _characterLastName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory,
-	int _characterMoney, Weapon* _characterWeapon, ECharacterRace _characterRace, ECharacterJob _characterJob, string _merchantShopName)
-	:Character(_creatureName, _characterLastName, _creatureDescription, _creatureHp, _creatureAttacksMoveset, _creatureDefense, _creatureCatchPhrase,_creatureInventory,
-		_characterMoney, _characterWeapon, _characterRace, _characterJob)
+Merchant::Merchant(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
+	int _characterMoney, ECharacterRace _characterRace, string _merchantShopName)
+	:Character(_creatureName, _characterLastName, _creatureDescription, _creatureCatchPhrase,_creatureInventory,
+		_characterMoney, _characterRace)
 {
 	merchantShopName = _merchantShopName;
 	//merchantWeaponStock = _merchantWeaponStock;
@@ -107,7 +107,8 @@ void Merchant::BuyWeaponFrom(Character* _character)
 	}
 
 	int weaponPrice = weaponToSell->GetItemPrice();
-	float weaponDurability = weaponToSell->GetWeaponDurability();
+	//float weaponDurability = weaponToSell->GetWeaponDurability();   //How am i supposed to get the durability if only the child has it
+	float weaponDurability = 1;
 	if (characterMoney >= weaponPrice) {
 		int merchantPrice = weaponPrice / (1 - weaponDurability);
 		cout << "I'm ready to pay " << merchantPrice << "$ for this one. Take it or leave it (y/n)" << endl;

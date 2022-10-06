@@ -13,8 +13,8 @@ public:
     //CONSTRUCTOR & DESTRUCTOR
     Merchant();
     ~Merchant();
-    Merchant(string _creatureName, string _characterLastName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory,
-        int _characterMoney, Weapon* _characterWeapon, ECharacterRace _characterRace, ECharacterJob _characterJob,
+    Merchant(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
+        int _characterMoney, ECharacterRace _characterRace,
         string _merchantShopName);
 
     //GET
