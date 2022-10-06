@@ -85,6 +85,7 @@ void Merchant::BuyWeaponFrom(Character* _character)
 	cout << "You want to sell me your weapon ?" << endl;
 	//ask which weapon
 	Item* weaponToSell;
+	weaponToSell = _character->GetCreatureInventory()->GetFirstWeapon();
 
 	int tempIndexItem = 0;
 
@@ -125,4 +126,9 @@ void Merchant::BuyWeaponFrom(Character* _character)
 		//merchant not have enough money
 		cout << "I'm sorry, i don't have enough money to buy yours" << endl;
 	}
+}
+
+void Merchant::UseMagicEffect()
+{
+	cout << "do some magic" << endl;
 }

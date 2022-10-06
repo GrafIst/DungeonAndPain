@@ -13,6 +13,7 @@ Creature::Creature() {
 
 Creature::~Creature() {
 	creatureAttacksMoveset.~vector();
+	delete creatureInventory;
 }
 
 Creature::Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory) {
@@ -47,6 +48,11 @@ void Creature::SufferDamage(int _damage) {
 void Creature::AddMoveToMoveset(Attack _attack)
 {
 	creatureAttacksMoveset.push_back(_attack);
+}
+
+void Creature::UseMagicEffect()
+{
+	cout << "do some magic" << endl;
 }
 
 

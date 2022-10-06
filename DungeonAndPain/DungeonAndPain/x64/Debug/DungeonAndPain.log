@@ -1,18 +1,20 @@
 ﻿  Character.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(42,62): warning C4552: '+': result of expression not used
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.cpp(46,20): warning C4552: '+': result of expression not used
+  Creature.cpp
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   DungeonAndPain.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(42,62): warning C4552: '+': result of expression not used
+  IMagicEffect.cpp
+  Inventory.cpp
   Merchant.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(41,62): warning C4552: '+': result of expression not used
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(110,41): error C2039: 'GetWeaponDurability': is not a member of 'Item'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Item.h(9): message : see declaration of 'Item'
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(112,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Character.h(42,62): warning C4552: '+': result of expression not used
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Merchant.cpp(114,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
   Monster.cpp
 C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-  Weapon.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Weapon.cpp(26,26): warning C4305: '-=': truncation from 'double' to 'float'
   Generating Code...
+C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(42): warning C4715: 'Inventory::GetFirstWeapon': not all control paths return a value
+  DungeonAndPain.vcxproj -> C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\x64\Debug\DungeonAndPain.exe

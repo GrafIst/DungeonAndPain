@@ -18,6 +18,7 @@ protected:
     ECharacterRace characterRace;
     ECharacterJob characterJob;
     int weaponAmount;
+    //Inventory* characterWeaponInventory;
 
 public:
     
@@ -46,5 +47,9 @@ public:
     void AddMoney(int _money);
 
     void AnnounceWeapon();
+
+    //IMPLEMENTATION OF INTERFACE
+    void UseMagicEffect();
+
 };
 

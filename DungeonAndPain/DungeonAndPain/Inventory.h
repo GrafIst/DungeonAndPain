@@ -19,7 +19,7 @@ public:
 	//GET
 	vector<Item*> GetItemsInventory() { return itemsInventory; };
 	Item* GetItemFromInventory(int _indexItem) { return itemsInventory[_indexItem]; };
-	Weapon* GetAllWeaponsFromInventory();
+	//Weapon* GetAllWeaponsFromInventory();
 	Item* GetFirstWeapon();
 
 	//METHOD

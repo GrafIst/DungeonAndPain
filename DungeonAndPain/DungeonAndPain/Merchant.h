@@ -28,5 +28,9 @@ public:
     void BuyWeaponFrom(Character* _character);
 
     //if i want my Merchant (child) to use Introduce() (from Parent of Parent), i need to have Parent encapsulation in header to be public and not protected
+
+    void UseMagicEffect();
+
+
 };
 

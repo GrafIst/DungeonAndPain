@@ -17,3 +17,8 @@ Monster::Monster(string _creatureName, string _creatureDescription, int _creatur
 {
 	lootsDrop = _lootsDrop;
 }
+
+void Monster::UseMagicEffect()
+{
+	cout << "do some magic" << endl;
+}

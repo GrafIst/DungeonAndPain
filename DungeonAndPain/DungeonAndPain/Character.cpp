@@ -89,3 +89,8 @@ void Character::AnnounceWeapon()
         }
     }
 }
+
+void Character::UseMagicEffect()
+{
+    cout << "do some magic" << endl;
+}

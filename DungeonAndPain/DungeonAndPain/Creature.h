@@ -5,10 +5,11 @@
 
 #include "Attack.h"
 #include "Inventory.h"
+#include "IMagicEffect.h"
 
 using namespace std;
 
-class Creature
+class Creature : public IMagicEffect
 {
 protected:
 	string creatureName;
@@ -42,6 +43,10 @@ public:
 	//SET
 	void SufferDamage(int _damage);
 	void AddMoveToMoveset(Attack _attack);
+
+
+	//IMPLEMENTATION OF INTERFACE
+	void UseMagicEffect();
 
 };
 

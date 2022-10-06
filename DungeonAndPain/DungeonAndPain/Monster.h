@@ -21,6 +21,7 @@ public:
     //GET
     vector<Item*> GetLootsDrop() { return lootsDrop; };
 
+    void UseMagicEffect();
 
 };
 
