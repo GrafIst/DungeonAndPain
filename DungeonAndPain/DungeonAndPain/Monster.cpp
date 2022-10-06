@@ -9,6 +9,7 @@ Monster::Monster():Creature()
 Monster::~Monster()
 {
 	lootsDrop.~vector();
+
 }
 
 Monster::Monster(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory

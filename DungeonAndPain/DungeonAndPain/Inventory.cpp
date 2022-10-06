@@ -9,7 +9,8 @@ Inventory::~Inventory()
 {
 	//need to delete all my pointer in my destructors
 	for (Item* _item : itemsInventory) {
-		delete _item;
+		//delete _item;
+		_item->~Item();
 	}
 	itemsInventory.clear();
 }

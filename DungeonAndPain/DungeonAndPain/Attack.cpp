@@ -12,7 +12,8 @@ Attack::Attack()
 
 Attack::~Attack()
 {
-
+	attackWeapon->~Weapon();
+	//why did delete not work for this pointer ???
 }
 
 Attack::Attack(string _attackName, Weapon* _attackWeapon, int _attackDamagePoints, EDamageType _attackDamageType, int _attackBonus)
