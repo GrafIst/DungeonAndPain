@@ -1,3 +1,1 @@
-﻿  Inventory.cpp
-C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\DungeonAndPain\Inventory.cpp(43): warning C4715: 'Inventory::GetFirstWeapon': not all control paths return a value
-  DungeonAndPain.vcxproj -> C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\x64\Debug\DungeonAndPain.exe
+﻿  DungeonAndPain.vcxproj -> C:\Users\merci\Documents\GitHub\DungeonAndPain\DungeonAndPain\x64\Debug\DungeonAndPain.exe

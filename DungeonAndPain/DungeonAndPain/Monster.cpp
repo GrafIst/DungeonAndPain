@@ -3,12 +3,12 @@
 Monster::Monster():Creature()
 {
 	creatureCatchPhrase = "Growl, i'm a monster";
-	lootsDrop.push_back(new Item());
+	//lootsDrop.push_back(new Item());
 }
 
 Monster::~Monster()
 {
-	lootsDrop.~vector();
+	//lootsDrop.~vector();
 
 }
 

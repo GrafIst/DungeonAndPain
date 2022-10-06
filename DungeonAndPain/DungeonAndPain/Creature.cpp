@@ -13,8 +13,8 @@ Creature::Creature() {
 
 Creature::~Creature() {
 	creatureAttacksMoveset.~vector();
-	for (vector<Item*>::iterator i = creatureInventory->GetItemsInventory().begin(); i != creatureInventory->GetItemsInventory().end(); ++i)
-		delete* i;
+	for (int i = 0; i<= creatureInventory->GetItemsInventory().size(); ++i)
+		delete[] creatureInventory->GetItemsInventory()[i];
 	delete creatureInventory;
 }
 
