@@ -86,24 +86,28 @@ void Merchant::BuyWeaponFrom(Character* _character)
 	//ask which weapon
 	Item* weaponToSell;
 
+	int tempIndexItem = 0;
+
 	if (_character->GetWeaponAmount() > 1) {
 		cout << "You have multiple weapon, which one do you want to sell :" << endl;
 		_character->AnnounceWeapon();
 		int indexWeapon;
 		cin >> indexWeapon;
-		for (Item* _item : _character->GetCreatureInventory()->GetItemsInventory()) {
+		for (Item* _item : _character->GetCreatureInventory()->GetItemsInventory()) {	
 			int tempIndexWeapon = 0;
 			if (_item->GetItemType() == EItemType::WeaponType) {
 				tempIndexWeapon++;
 				if (tempIndexWeapon == indexWeapon) {
 					weaponToSell = _item;
+					break;
 				}
+				tempIndexWeapon++;
 			}
 		}
 	}
-	Item* i
-	int weaponPrice = _character->GetCharacterWeapon()->GetItemPrice();
-	float weaponDurability = _character->GetCharacterWeapon()->GetWeaponDurability();
+
+	int weaponPrice = weaponToSell->GetItemPrice();
+	float weaponDurability = weaponToSell->GetWeaponDurability();
 	if (characterMoney >= weaponPrice) {
 		int merchantPrice = weaponPrice / (1 - weaponDurability);
 		cout << "I'm ready to pay " << merchantPrice << "$ for this one. Take it or leave it (y/n)" << endl;
@@ -111,7 +115,7 @@ void Merchant::BuyWeaponFrom(Character* _character)
 		cin >> answer;
 		if (answer == 'y') {
 			cout << "Here you go." << endl;
-			_character->GetCharacterWeapon()->WeaponSell();
+			_character->GetCreatureInventory()->RemoveItemFromInventory(weaponToSell,tempIndexItem+1);
 			//add money
 			_character->AddMoney(merchantPrice);
 		}

@@ -33,7 +33,7 @@ void Character::Loot(Character* _character)
 {
     cout << "He take the money of the defeated character" << endl;
     characterMoney + _character->GetCharacterMoney();
-    cout << "His weapon is " << _character->GetCharacterWeapon()->GetItemName() << ". " << _character->GetCharacterWeapon()->GetItemDescription();
+    cout << "His weapon is " << _character->GetCreatureInventory()->GetFirstWeapon() << ". " << _character->GetCreatureInventory()->GetFirstWeapon()->GetItemDescription();
     cout << "Will he switch it with his own weapon " << characterWeapon->GetItemName() << "or ignore it ? (y/n)" << endl;
     char answer;
     cin >> answer;

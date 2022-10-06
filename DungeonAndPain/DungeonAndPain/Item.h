@@ -28,6 +28,8 @@ public:
 	float GetItemWeight() { return itemWeight; };
 	int GetItemPrice() { return itemPrice; };
 
+	virtual float GetWeaponDurability() = 0;
+
 	//METHOD
 };
 
