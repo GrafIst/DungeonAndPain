@@ -4,6 +4,7 @@
 
 #include "Creature.h"
 #include "Character.h"
+#include "Monster.h"
 #include "Merchant.h"
 #include "Inventory.h"
 #include "Item.h"
@@ -24,8 +25,11 @@ int main()
     vector<Item*> merchantWeaponStock = { &ironSword, &woodenHammer };
 
     Inventory inventoryMerchant(merchantWeaponStock);
+    Item bone(EItemType::CollectibleType, "Bone", "A solid white bone", 10, 4);
+    vector<Item*> skelettonLoots(3, &bone);
+    Inventory skelettonLootsInventory(skelettonLoots);
 
-    
+    Monster skeletton("Skellington", "This skelleton know jazz for some reason",15, defaultMoveset, 3, "Heyo, am a cool bonedude", skelettonLootsInventory)
 
     /*Merchant merchantA("Jack", "Polter", "A travelling merchant", 100, defaultMoveset, 15, "Come here, i've got stuff to sell",&inventoryMerchant, 100, &ironSword, Elve, Villager, "Everything's cheap", merchantWeaponStock);
 
