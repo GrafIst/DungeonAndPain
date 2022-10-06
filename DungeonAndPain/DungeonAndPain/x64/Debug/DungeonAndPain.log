@@ -1,0 +1,149 @@
+﻿  Attack.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(7,2): error C2065: 'attackWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(7,21): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(8,23): error C2065: 'attackWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(18,36): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(21,2): error C2065: 'attackWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(21,17): error C2065: '_attackWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(22,23): error C2065: 'attackWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(22,57): error C2065: '_attackDamagePoints': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.cpp(23,21): error C2065: '_attackDamageType': undeclared identifier
+  Character.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(44,23): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(33,20): warning C4552: '+': result of expression not used
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(34,45): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(34,104): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(35,57): error C2065: 'characterWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(48,5): error C2065: 'characterWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(48,35): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(52,36): error C2761: 'SwitchWeapon': redeclaration of member is not allowed
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(52,38): error C2065: '_weapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(53,1): error C2143: syntax error: missing ';' before '{'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.cpp(53,1): error C2447: '{': missing function header (old-style formal list?)
+  Creature.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+  DungeonAndPain.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(44,23): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.h(17,30): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.h(25,27): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(18,12): error C2146: syntax error: missing ';' before identifier 'ironSword'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(18,12): error C3861: 'ironSword': identifier not found
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(19,12): error C2146: syntax error: missing ';' before identifier 'woodenHammer'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(19,12): error C3861: 'woodenHammer': identifier not found
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(21,43): error C2065: 'ironSword': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(24,44): error C2065: 'ironSword': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(24,56): error C2065: 'woodenHammer': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(28,154): error C2065: 'ironSword': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\DungeonAndPain.cpp(30,168): error C2065: 'ironSword': undeclared identifier
+  Inventory.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+  Item.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Item.cpp(5,24): error C2838: 'Item': illegal qualified name in member declaration
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Item.cpp(5,28): error C2275: 'Item': expected an expression instead of a type
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Item.cpp(8,19): warning C4305: '=': truncation from 'double' to 'float'
+  Merchant.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(44,23): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.h(17,30): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.h(25,27): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(17,23): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(19,20): error C2065: '_characterWeapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(19,38): error C2065: '_characterRace': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(19,54): error C2065: '_characterJob': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(21,21): error C2065: '_merchantShopName': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(26,40): error C2761: 'void Merchant::AddWeaponToStock(void)': redeclaration of member is not allowed
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(26,41): error C2065: '_weapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(27,1): error C2143: syntax error: missing ';' before '{'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(27,1): error C2447: '{': missing function header (old-style formal list?)
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(35,15): error C2065: '_weapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(35,23): error C2143: syntax error: missing ';' before ':'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(35,25): error C2065: 'merchantWeaponStock': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(35,44): error C2143: syntax error: missing ';' before ')'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(37,28): error C2065: '_weapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(37,63): error C2065: '_weapon': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(55,26): error C2065: 'merchantWeaponStock': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(57,11): error C2065: 'weaponSelected': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(57,28): error C2065: 'merchantWeaponStock': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(59,42): error C2065: 'weaponSelected': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(61,29): error C2065: 'weaponSelected': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(62,4): error C2065: 'merchantWeaponStock': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(62,30): error C2065: 'merchantWeaponStock': undeclared identifier
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(79,32): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(80,39): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(82,21): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Merchant.cpp(88,16): error C2039: 'GetCharacterWeapon': is not a member of 'Character'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Character.h(12): message : see declaration of 'Character'
+  Monster.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(3,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(12,22): error C2238: unexpected token(s) preceding ';'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(21,29): error C2061: syntax error: identifier 'Weapon'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Attack.h(25,28): error C2334: unexpected token(s) preceding '{'; skipping apparent function body
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C2143: syntax error: missing ';' before '*'
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,8): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Inventory.h(21,26): error C2238: unexpected token(s) preceding ';'
+  Weapon.cpp
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Weapon.cpp(5,24): error C2838: 'Item': illegal qualified name in member declaration
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Weapon.cpp(5,28): error C2275: 'Item': expected an expression instead of a type
+D:\3-TD\Nathan MERCIER\DungeonAndPain\DungeonAndPain\Weapon.cpp(26,26): warning C4305: '-=': truncation from 'double' to 'float'
+  Generating Code...
