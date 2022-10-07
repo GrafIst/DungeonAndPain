@@ -16,7 +16,7 @@ Creature::~Creature() {
 	creatureAttacksMoveset.~vector();
 }
 
-Creature::Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory) {
+Creature::Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack>& _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory) {
 	creatureName = _creatureName;
 	creatureDescription = _creatureDescription;
 	creatureHp = _creatureHp;

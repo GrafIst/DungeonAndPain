@@ -12,6 +12,10 @@ Inventory::~Inventory()
 		//delete _item;
 		_item->~Item();
 	}
+	for (Weapon* _weapon : weaponInventory) {
+		//delete _item;
+		_weapon->~Weapon();
+	}
 	itemsInventory.clear();
 }
 
@@ -19,6 +23,11 @@ Inventory::Inventory(vector<Item*> _itemsInventory)
 {
 	itemsInventory = _itemsInventory;
 }
+Inventory::Inventory(vector<Weapon*> _weaponsInventory)
+{
+	weaponInventory = _weaponsInventory;
+}
+
 
 
 
@@ -33,13 +42,25 @@ Inventory::Inventory(vector<Item*> _itemsInventory)
 //	return weaponsVector;
 //}
 
-Item* Inventory::GetFirstWeapon()
-{
-	for (Item* _items : itemsInventory) {
-		if (_items->GetItemType() == EItemType::WeaponType) {
-			return _items;
-		}
+int Inventory::SelectWeapon() {
+	cout << "Select a weapon : (input the index)" << endl;
+	for (int i = 0; i<weaponInventory.size(); i++) {
+		cout << i << " - " << weaponInventory[i]->GetItemName();
 	}
+	int choiceWeapon;
+
+	do{
+		cin >> choiceWeapon;
+	} while (choiceWeapon < weaponInventory.size());
+
+	return choiceWeapon;
+}
+
+
+
+Weapon* Inventory::GetFirstWeapon()
+{
+	return weaponInventory[0];
 }
 
 

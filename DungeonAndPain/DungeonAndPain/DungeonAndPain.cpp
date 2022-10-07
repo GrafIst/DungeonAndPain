@@ -22,7 +22,7 @@ int main()
     Attack ironSwordSlash("Sword Slash", &ironSword, 4, Slashing, 1); //Implemented the reference of the Weapon instead of a copy
     vector<Attack> defaultMoveset(3, ironSwordSlash);
 
-    vector<Weapon*> merchantWeaponStock = { &ironSword, &woodenHammer };
+    
 
     //Inventory inventoryMerchant(merchantWeaponStock);
     Item bone(EItemType::CollectibleType, "Bone", "A solid white bone", 10, 4);
@@ -39,8 +39,14 @@ int main()
     Monster skeletton("Skellington", "This skelleton know jazz for some reason", 15, defaultMoveset, 3, "Heyo, am a cool bonedude", &skelettonLootsInventory);
     skeletton.UseMagicEffect();
 
+    vector<Weapon*> merchantWeaponStock = { &ironSword, &woodenHammer };
+
     Merchant a("Merchant","a simple man", "I sell stuff", 1000, "merchantShop", merchantWeaponStock); 
     a.Introduce();
+
+    Character John("John", "John", "a john", "Don't call me john, im jack", &skelettonLootsInventory, 250, Orc);
+
+    a.SellWeaponTo(&John);
 
    
 

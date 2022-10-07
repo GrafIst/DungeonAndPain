@@ -7,6 +7,7 @@
 #include "Inventory.h"
 #include "IMagicEffect.h"
 
+
 using namespace std;
 
 class Creature : public IMagicEffect
@@ -24,7 +25,7 @@ public:
 	//CONSTRUCTOR & DESTRUCTOR
 	Creature();
 	~Creature();
-	Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory);
+	Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> &_creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory);
 	Creature(string _creatureName, string _creatureDescription, string _creatureCatchPhrase);
 
 	//GET

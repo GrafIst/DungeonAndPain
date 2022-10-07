@@ -20,7 +20,7 @@ public:
 
     //GET
     string GetMerchantShopName() { return merchantShopName; };
-    //vector<Weapon*> GetMerchantWeaponStock() { return merchantWeaponStock; };
+    vector<Weapon*> GetMerchantWeaponStock() { return merchantWeaponStock; };
 
     //METHOD
     void AddWeaponToStock(Weapon &_weapon); //it should add a reference of a weapon and not a copy with this

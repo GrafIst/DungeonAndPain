@@ -9,18 +9,23 @@ using namespace std;
 class Inventory
 {
 	vector<Item*> itemsInventory;
+	vector<Weapon*> weaponInventory;
 
 public:
 	//CONSTRUCTOR & DESTRUCTOR
 	Inventory();
 	~Inventory();
 	Inventory(vector<Item*> _itemsInventory);
+	Inventory(vector<Weapon*> _weaponsInventory);
 	
 	//GET
 	vector<Item*> GetItemsInventory() { return itemsInventory; };
+	vector<Weapon* > GetWeaponsInventory() { return weaponInventory; };
 	Item* GetItemFromInventory(int _indexItem) { return itemsInventory[_indexItem]; };
-	//Weapon* GetAllWeaponsFromInventory();
-	Item* GetFirstWeapon();
+	Weapon* GetWeaponFromInventory(int _indexWeapon) { return weaponInventory[_indexWeapon]; };
+
+	Weapon* GetFirstWeapon();
+	int SelectWeapon();
 
 	//METHOD
 	void AddItemToInventory(Item* _item);

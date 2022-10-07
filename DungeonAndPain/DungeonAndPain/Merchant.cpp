@@ -3,14 +3,14 @@
 //CONSTRUCTOR & DESTRUCTOR
 Merchant::Merchant() : Creature()
 {
+	merchantMoney = 100000;
 	merchantShopName = "Default Shop Name";
-	//Weapon defaultSword("DefaultSword", "ADefaultSword", 1, 1, Sword, 1, 1);
-	//merchantWeaponStock.push_back(new Weapon());
+	merchantWeaponStock.push_back(new Weapon());
 }
 
 Merchant::~Merchant()
 {
-
+	merchantWeaponStock.~vector();
 }
 
 Merchant::Merchant(string _creatureName, string _creatureDescription, string _creatureCatchPhrase, int _merchantMoney, string _merchantShopName, vector<Weapon*> _merchantWeaponStock)
@@ -32,9 +32,9 @@ void Merchant::ShowStock()
 {
 	std::cout << "Here is what I have to offer :" << std::endl;
 	int i = 0;
-	for (Item* _item : creatureInventory->GetItemsInventory())
+	for (Weapon* _weapon : GetMerchantWeaponStock())
 	{
-		std::cout << i << "-" << _item->GetItemName() << " - " << _item->GetItemPrice() << "$" << std::endl;
+		std::cout << i << "-" << _weapon->GetItemName() << " - " << _weapon->GetItemPrice() << "$" << std::endl;
 		i++;
 	}
 }
@@ -47,25 +47,20 @@ void Merchant::SellWeaponTo(Character* _character)
 	char answer;
 	cin >> answer;
 	if (answer == 'y') {
-		//Ask what weapon
-		int indexAnswer;
-		cout << "(write index of the one you want :)" << endl;
-		do {
-			cin >> indexAnswer;
-		} while (indexAnswer > creatureInventory->GetItemsInventory().size()); //make sure player answer is in bound with the vector
 
-		Item* itemSelected = creatureInventory->GetItemFromInventory(indexAnswer);
+		int indexWeapon = _character->GetCreatureInventory()->SelectWeapon();
+		Weapon* weaponSelected = _character->GetCreatureInventory()->GetWeaponFromInventory(indexWeapon);
 
 		//check if player has enough money to buy it
-		if (_character->GetCharacterMoney() >= itemSelected->GetItemPrice()) { //need the attribute of parents to be public or protected so the child can access it
+		if (_character->GetCharacterMoney() >= weaponSelected->GetItemPrice()) { //need the attribute of parents to be public or protected so the child can access it
 			cout << "Here, it's yours : " << endl;
 			//detect if item is weapon or not
-			if (itemSelected->GetItemType() == EItemType::WeaponType) {
+			if (weaponSelected->GetItemType() == EItemType::WeaponType) {
 				_character->AddWeaponAmount(1);
 			}
-			_character->GetCreatureInventory()->AddItemToInventory(itemSelected);
+			_character->GetCreatureInventory()->AddItemToInventory(weaponSelected);
 
-			creatureInventory->GetItemsInventory().erase(creatureInventory->GetItemsInventory().begin() + indexAnswer); //remove weapon from merchant stock, it uses iterators
+			creatureInventory->GetItemsInventory().erase(creatureInventory->GetItemsInventory().begin() + indexWeapon); //remove weapon from merchant stock, it uses iterators
 
 		}
 		else {
@@ -83,33 +78,14 @@ void Merchant::BuyWeaponFrom(Character* _character)
 {
 	//TODO Merchant buy a weapon from a character
 	cout << "You want to sell me your weapon ?" << endl;
-	//ask which weapon
-	Item* weaponToSell;
-	weaponToSell = _character->GetCreatureInventory()->GetFirstWeapon();
+	int indexWeapon;
+	Weapon* weaponToSell;
 
-	int tempIndexItem = 0;
-
-	if (_character->GetWeaponAmount() > 1) {
-		cout << "You have multiple weapon, which one do you want to sell :" << endl;
-		_character->AnnounceWeapon();
-		int indexWeapon;
-		cin >> indexWeapon;
-		for (Item* _item : _character->GetCreatureInventory()->GetItemsInventory()) {	
-			int tempIndexWeapon = 0;
-			if (_item->GetItemType() == EItemType::WeaponType) {
-				tempIndexWeapon++;
-				if (tempIndexWeapon == indexWeapon) {
-					weaponToSell = _item;
-					break;
-				}
-				tempIndexWeapon++;
-			}
-		}
-	}
+	indexWeapon = _character->GetCreatureInventory()->SelectWeapon();
+	weaponToSell = _character->GetCreatureInventory()->GetWeaponFromInventory(indexWeapon);
 
 	int weaponPrice = weaponToSell->GetItemPrice();
-	//float weaponDurability = weaponToSell->GetWeaponDurability();   //How am i supposed to get the durability if only the child has it
-	float weaponDurability = 1;
+	float weaponDurability = weaponToSell->GetWeaponDurability();
 	if (merchantMoney >= weaponPrice) {
 		int merchantPrice = weaponPrice / (1 - weaponDurability);
 		cout << "I'm ready to pay " << merchantPrice << "$ for this one. Take it or leave it (y/n)" << endl;
@@ -117,7 +93,7 @@ void Merchant::BuyWeaponFrom(Character* _character)
 		cin >> answer;
 		if (answer == 'y') {
 			cout << "Here you go." << endl;
-			_character->GetCreatureInventory()->RemoveItemFromInventory(weaponToSell,tempIndexItem+1);
+			_character->GetCreatureInventory()->RemoveItemFromInventory(weaponToSell,indexWeapon+1);
 			//add money
 			_character->AddMoney(merchantPrice);
 		}

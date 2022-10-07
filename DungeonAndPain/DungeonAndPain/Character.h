@@ -18,7 +18,7 @@ protected:
     ECharacterRace characterRace;
     ECharacterJob characterJob;
     int weaponAmount;
-    //Inventory* characterWeaponInventory;
+    Inventory* characterWeaponInventory;
 
 public:
     

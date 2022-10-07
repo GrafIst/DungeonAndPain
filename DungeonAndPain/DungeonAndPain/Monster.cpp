@@ -12,7 +12,7 @@ Monster::~Monster()
 
 }
 
-Monster::Monster(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory)
+Monster::Monster(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> &_creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory)
 	:Creature(_creatureName, _creatureDescription, _creatureHp, _creatureAttacksMoveset, _creatureDefense, _creatureCatchPhrase, _creatureInventory)
 {
 	//lootsDrop = _lootsDrop;
