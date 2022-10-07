@@ -1,21 +1,21 @@
 #pragma once
 
+#include "Creature.h"
 #include "Character.h"
 #include <math.h>
 
 class Merchant :
-    public Character //QUESTION : does this correspond to a type of inheritance or access specifier ?
+    public Creature //QUESTION : does this correspond to a type of inheritance or access specifier ?
 {
     string merchantShopName;
-    //vector<Weapon*> merchantWeaponStock;
+    vector<Weapon*> merchantWeaponStock;
 
 public:
     //CONSTRUCTOR & DESTRUCTOR
     Merchant();
     ~Merchant();
-    Merchant(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
-        int _characterMoney, ECharacterRace _characterRace,
-        string _merchantShopName);
+    Merchant(string _creatureName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
+        string _merchantShopName, vector<Weapon*> _merchantWeaponStock);
 
     //GET
     string GetMerchantShopName() { return merchantShopName; };

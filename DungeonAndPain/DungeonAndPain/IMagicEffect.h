@@ -9,10 +9,9 @@ protected:
 	string magicName;
 	int manaCost;
 
-public:
-	IMagicEffect();
-	virtual ~IMagicEffect();
 
+public:
+	virtual ~IMagicEffect();
 	virtual void UseMagicEffect() = 0;
 
 };
