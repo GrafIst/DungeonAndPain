@@ -25,6 +25,7 @@ public:
 	Creature();
 	~Creature();
 	Creature(string _creatureName, string _creatureDescription, int _creatureHp, vector<Attack> _creatureAttacksMoveset, int _creatureDefense, string _creatureCatchPhrase, Inventory* _creatureInventory);
+	Creature(string _creatureName, string _creatureDescription, string _creatureCatchPhrase);
 
 	//GET
 	string GetName() { return creatureName; };

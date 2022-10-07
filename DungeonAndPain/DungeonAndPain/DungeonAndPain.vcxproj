@@ -146,6 +146,7 @@
     <ClInclude Include="ECharacterRace.h" />
     <ClInclude Include="EDamageType.h" />
     <ClInclude Include="EItemType.h" />
+    <ClInclude Include="EMagicType.h" />
     <ClInclude Include="EWeaponType.h" />
     <ClInclude Include="IMagicEffect.h" />
     <ClInclude Include="Inventory.h" />

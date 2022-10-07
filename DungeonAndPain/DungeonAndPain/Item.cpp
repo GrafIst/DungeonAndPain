@@ -7,6 +7,7 @@ Item::Item()
 	itemDescription = "A simple item";
 	itemWeight = 3.14;
 	itemPrice = 10;
+	magicType = EMagicType::Wind & EMagicType::Fire;
 }
 
 Item::~Item()
@@ -21,4 +22,8 @@ Item::Item(EItemType _itemType, string _itemName, string _itemDescription, float
 	itemDescription = _itemDescription;
 	itemWeight = _itemWeight;
 	itemPrice = _itemPrice;
+}
+
+void Item::UseMagicEffect() {
+	cout << "item do magic" << endl;
 }

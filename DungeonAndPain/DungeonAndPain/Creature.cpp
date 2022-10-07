@@ -9,6 +9,7 @@ Creature::Creature() {
 	creatureDefense = 5;
 	creatureCatchPhrase = "Oh hi";
 	creatureInventory = new Inventory();
+	SetType(EMagicType::Ice);
 }
 
 Creature::~Creature() {
@@ -23,6 +24,13 @@ Creature::Creature(string _creatureName, string _creatureDescription, int _creat
 	creatureDefense = _creatureDefense;
 	creatureCatchPhrase = _creatureCatchPhrase;
 	creatureInventory = _creatureInventory;
+}
+
+Creature::Creature(string _creatureName, string _creatureDescription, string _creatureCatchPhrase)
+{
+	creatureName = _creatureName;
+	creatureDescription = _creatureDescription;
+	creatureCatchPhrase = _creatureCatchPhrase;
 }
 
 //METHODS

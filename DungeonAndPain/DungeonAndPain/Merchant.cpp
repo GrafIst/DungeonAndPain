@@ -1,7 +1,7 @@
 #include "Merchant.h"
 
 //CONSTRUCTOR & DESTRUCTOR
-Merchant::Merchant() : Character()
+Merchant::Merchant() : Creature()
 {
 	merchantShopName = "Default Shop Name";
 	//Weapon defaultSword("DefaultSword", "ADefaultSword", 1, 1, Sword, 1, 1);
@@ -13,14 +13,14 @@ Merchant::~Merchant()
 
 }
 
-Merchant::Merchant(string _creatureName, string _characterLastName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
-	int _characterMoney, ECharacterRace _characterRace, string _merchantShopName)
-	:Character(_creatureName, _characterLastName, _creatureDescription, _creatureCatchPhrase,_creatureInventory,
-		_characterMoney, _characterRace)
+Merchant::Merchant(string _creatureName, string _creatureDescription, string _creatureCatchPhrase, int _merchantMoney, string _merchantShopName, vector<Weapon*> _merchantWeaponStock)
+	: Creature(_creatureName, _creatureDescription, _creatureCatchPhrase)
 {
+	merchantMoney = _merchantMoney;
 	merchantShopName = _merchantShopName;
-	//merchantWeaponStock = _merchantWeaponStock;
+	merchantWeaponStock = _merchantWeaponStock;
 }
+
 
 //METHOD
 void Merchant::AddWeaponToStock(Weapon &_weapon)
@@ -110,7 +110,7 @@ void Merchant::BuyWeaponFrom(Character* _character)
 	int weaponPrice = weaponToSell->GetItemPrice();
 	//float weaponDurability = weaponToSell->GetWeaponDurability();   //How am i supposed to get the durability if only the child has it
 	float weaponDurability = 1;
-	if (characterMoney >= weaponPrice) {
+	if (merchantMoney >= weaponPrice) {
 		int merchantPrice = weaponPrice / (1 - weaponDurability);
 		cout << "I'm ready to pay " << merchantPrice << "$ for this one. Take it or leave it (y/n)" << endl;
 		char answer;

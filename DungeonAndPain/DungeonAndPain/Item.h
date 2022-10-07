@@ -3,10 +3,11 @@
 #include <string>
 #include <iostream>
 #include "EItemType.h"
+#include "IMagicEffect.h"
 
 using namespace std;
 
-class Item
+class Item : public IMagicEffect
 {
 public:
 	EItemType itemType;
@@ -31,5 +32,6 @@ public:
 	//virtual float GetWeaponDurability() = 0;
 
 	//METHOD
+	void UseMagicEffect();
 };
 

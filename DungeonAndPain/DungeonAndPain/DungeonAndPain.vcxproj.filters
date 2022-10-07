@@ -89,5 +89,8 @@
     <ClInclude Include="IMagicEffect.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="EMagicType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

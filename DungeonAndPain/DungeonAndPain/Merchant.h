@@ -7,6 +7,7 @@
 class Merchant :
     public Creature //QUESTION : does this correspond to a type of inheritance or access specifier ?
 {
+    int merchantMoney;
     string merchantShopName;
     vector<Weapon*> merchantWeaponStock;
 
@@ -14,8 +15,8 @@ public:
     //CONSTRUCTOR & DESTRUCTOR
     Merchant();
     ~Merchant();
-    Merchant(string _creatureName, string _creatureDescription, string _creatureCatchPhrase, Inventory* _creatureInventory,
-        string _merchantShopName, vector<Weapon*> _merchantWeaponStock);
+    Merchant(string _creatureName, string _creatureDescription, string _creatureCatchPhrase,
+        int _merchantMoney, string _merchantShopName, vector<Weapon*> _merchantWeaponStock);
 
     //GET
     string GetMerchantShopName() { return merchantShopName; };
